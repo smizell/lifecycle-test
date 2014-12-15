@@ -1,0 +1,22 @@
+FORMAT: 1A
+HOST: http://example.com/wp-json
+
+# BugTest 1
+Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+
+## Posts [/blah/?bo=4]
+    
+### GET
++ Request (application/json)
+
+    ```json
+    { "foo": "bar" }
+    ```
+
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "title": "Jogging in park"
+        }, {
+          "id": 2, "title": "Pick-up posters from post-office"
+        }]
